@@ -1,0 +1,234 @@
+@charset "UFT-8";
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Bebas+Neue&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Playwrite+AR:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('font/idroid.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+/* 
+COLORS
+#39cb7851
+#39CB79
+#ffffff
+#195935
+#45ff8c8f
+*/
+:root {
+    --color1: #39cb7851;
+    --color2: #39CB79;
+    --color3: #ffffff;
+    --color4: #17492d;
+    --color5: #45ff8c8f;
+    --color0: #000000;
+
+    --fontdefault: 'Android', Arial;
+    --fontbebas: 'Bebas Neue', Arial;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fontdefault);
+    background-image: linear-gradient(to left, var(--color1), #76A88C);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--color2), var(--color4));
+    min-height: 150px;
+    padding-top: 40px;
+    font-family: 'Bebas Neue';
+    color: #ffffff;
+    font-weight: light;
+    text-align: center;
+}
+
+header>h1 {
+    font-size: 3.0em;
+    margin-top: 30px;
+    text-shadow: 2px 2px #000000b3;
+}
+
+header>p {
+    font-family: Arial;
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-shadow: 2px 2px #00000078;
+    text-align: center;
+}
+
+nav {
+    background-color: var(--color4);
+    padding: 10px;
+    margin-top: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: -1px 3px 8px 2px rgba(0, 0, 0, 0.577);
+    text-align: left;
+
+}
+
+nav>a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+
+nav>a:hover {
+    background-color: #45ff8c8f;
+    font-weight: bolder;
+    border-radius: 8px;
+    color: #0a2817;
+}
+
+main {
+    background-color: white;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;
+    margin-top: 45px;
+    padding: 24px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 5px 3px rgba(0, 0, 0, 0.405);
+}
+
+main img {
+    margin: auto;
+    display: block;
+    margin-top: 24px;
+    width: 100%;
+}
+
+main a {
+    background-color: var(--color2);
+    text-decoration: none;
+    padding: 3px;
+    border-radius: 3px;
+    color: #0a2817;
+    font-weight: bolder;
+    font-style: italic;
+    transition-duration: 0.2s;
+
+}
+
+main a:hover {
+    background-color: var(--color1);
+    color: var(--color2);
+}
+
+main h2 {
+    margin-top: 24px;
+    background-image: linear-gradient(to right, #93d3b1b2, transparent);
+    color: #000000b4;
+    text-indent: 8px;
+}
+
+a.externo::after {
+    content: '🔗';
+    /*OU '\1F517'   */
+}
+
+p {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 35px;
+    line-height: 2em;
+    margin-top: 24px;
+}
+
+h1#topUm {
+    text-align: left;
+    color: #53b982;
+
+}
+
+
+
+div.box-video {
+    background-color: #195935;
+    padding: 5px 5px 0px 5px;
+    position: relative;
+    padding-bottom: 56%;
+    border-radius: 12px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+div.box-video>iframe {
+    position: absolute;
+    top: 3.4%;
+    left: 3.5%;
+    width: 93%;
+    height: 93%;
+}
+
+.bugdroidwithpeople {
+    max-width: 350px;
+}
+
+aside {
+    background-color: #C0EED4;
+    padding: 10px;
+    border-radius: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.467);
+    margin-top: 24px;
+}
+
+aside>ul {
+    list-style-position: inside;
+    list-style-type: '\2714\00A0';
+    columns: 2;
+
+}
+
+aside>h4 {
+    background-color: var(--color4);
+    color: white;
+    padding: 9px;
+    margin: -10px -10px -0px -10px;
+    border-radius: 12px 12px 0 0;
+    text-indent: 10px;
+}
+
+p#end {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 35px;
+    line-height: 1.5em;
+    padding: 10px;
+    margin: 15px;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+footer {
+    background-color: #195935;
+    font: italic 300 1em Arial;
+    color: white;
+    text-align: center;
+    padding: 34px;
+    margin-top: 45px;
+}
+
+footer>a {
+    text-decoration: none;
+    color: aliceblue;
+    margin-top: 24px;
+    transition-duration: 0.2s;
+}
+
+footer>a:hover {
+    text-decoration: underline;
+    color: #39CB79;
+}
